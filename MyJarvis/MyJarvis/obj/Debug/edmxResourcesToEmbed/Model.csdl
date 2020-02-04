@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DWDataMartModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="DWDataMartEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="spGetPendingTicketsAvgTime" ReturnType="Collection(DWDataMartModel.spGetPendingTicketsAvgTime_Result)" />
+    <FunctionImport Name="spGetPendingTicketsAvgTimeD" ReturnType="Collection(DWDataMartModel.spGetPendingTicketsAvgTimeD_Result)" />
+    <FunctionImport Name="spGetPendingTicketsStatus" ReturnType="Collection(DWDataMartModel.spGetPendingTicketsStatus_Result)" />
+    <FunctionImport Name="spGetT2OffPeakResponseSLAPercentage" ReturnType="Collection(DWDataMartModel.spGetT2OffPeakResponseSLAPercentage_Result)" />
+    <FunctionImport Name="spGetT2CentralAvgResolutionTime" ReturnType="Collection(DWDataMartModel.spGetT2CentralAvgResolutionTime_Result)" />
+    <FunctionImport Name="spGetT2CentralSLAStatus" ReturnType="Collection(DWDataMartModel.spGetT2CentralSLAStatus_Result)" />
+    <FunctionImport Name="spGetT2CommunicationsAvgResolutionTime" ReturnType="Collection(DWDataMartModel.spGetT2CommunicationsAvgResolutionTime_Result)" />
+    <FunctionImport Name="spGetT2CommunicationsSLAStatus" ReturnType="Collection(DWDataMartModel.spGetT2CommunicationsSLAStatus_Result)" />
+    <FunctionImport Name="spGetT2GulshanAvgResolutionTime" ReturnType="Collection(DWDataMartModel.spGetT2GulshanAvgResolutionTime_Result)" />
+    <FunctionImport Name="spGetT2GulshanSLAStatus" ReturnType="Collection(DWDataMartModel.spGetT2GulshanSLAStatus_Result)" />
+    <FunctionImport Name="spGetT2NetworksAvgResolutionTime" ReturnType="Collection(DWDataMartModel.spGetT2NetworksAvgResolutionTime_Result)" />
+    <FunctionImport Name="spGetT2NetworksSLAStatus" ReturnType="Collection(DWDataMartModel.spGetT2NetworksSLAStatus_Result)" />
+    <FunctionImport Name="spGetT2OffPeakAvgResolutionTime" ReturnType="Collection(DWDataMartModel.spGetT2OffPeakAvgResolutionTime_Result)" />
+    <FunctionImport Name="spGetT2OffPeakAvgResponseTime" ReturnType="Collection(DWDataMartModel.spGetT2OffPeakAvgResponseTime_Result)" />
+    <FunctionImport Name="spGetT2OffPeakResponseSLAStatus" ReturnType="Collection(DWDataMartModel.spGetT2OffPeakResponseSLAStatus_Result)" />
+    <FunctionImport Name="spGetT2OffPeakSLAStatus" ReturnType="Collection(DWDataMartModel.spGetT2OffPeakSLAStatus_Result)" />
+    <FunctionImport Name="spGetT2OffSiteAvgResolutionTime" ReturnType="Collection(DWDataMartModel.spGetT2OffSiteAvgResolutionTime_Result)" />
+    <FunctionImport Name="spGetT2OffSiteSLAStatus" ReturnType="Collection(DWDataMartModel.spGetT2OffSiteSLAStatus_Result)" />
+    <FunctionImport Name="spGetT2OnSiteAvgResolutionTime" ReturnType="Collection(DWDataMartModel.spGetT2OnSiteAvgResolutionTime_Result)" />
+    <FunctionImport Name="spGetT2OnSiteAvgResponseTime" ReturnType="Collection(DWDataMartModel.spGetT2OnSiteAvgResponseTime_Result)" />
+    <FunctionImport Name="spGetT2OnSiteResponseSLAStatus" ReturnType="Collection(DWDataMartModel.spGetT2OnSiteResponseSLAStatus_Result)" />
+    <FunctionImport Name="spGetT2OnSiteSLAStatus" ReturnType="Collection(DWDataMartModel.spGetT2OnSiteSLAStatus_Result)" />
+  </EntityContainer>
+  <ComplexType Name="spGetPendingTicketsAvgTime_Result">
+    <Property Type="String" Name="Status" Nullable="true" MaxLength="3072" />
+    <Property Type="Int32" Name="Total" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="spGetPendingTicketsStatus_Result">
+    <Property Type="String" Name="Status" Nullable="true" MaxLength="3072" />
+    <Property Type="Int32" Name="Total" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="spGetPendingTicketsAvgTimeD_Result">
+    <Property Type="Int32" Name="Total" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="spGetT2OffPeakResponseSLAPercentage_Result">
+    <Property Type="String" Name="Status" Nullable="true" MaxLength="256" />
+    <Property Type="Decimal" Name="Total" Nullable="true" Precision="26" Scale="12" />
+  </ComplexType>
+  <ComplexType Name="spGetT2CentralAvgResolutionTime_Result">
+    <Property Type="String" Name="SupportGroup" Nullable="true" MaxLength="3072" />
+    <Property Type="Int32" Name="Total" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="spGetT2CentralSLAStatus_Result">
+    <Property Type="String" Name="Status" Nullable="true" MaxLength="256" />
+    <Property Type="Int32" Name="Total" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="spGetT2CommunicationsAvgResolutionTime_Result">
+    <Property Type="String" Name="SupportGroup" Nullable="true" MaxLength="3072" />
+    <Property Type="Int32" Name="Total" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="spGetT2CommunicationsSLAStatus_Result">
+    <Property Type="String" Name="Status" Nullable="true" MaxLength="256" />
+    <Property Type="Int32" Name="Total" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="spGetT2GulshanAvgResolutionTime_Result">
+    <Property Type="String" Name="SupportGroup" Nullable="true" MaxLength="3072" />
+    <Property Type="Int32" Name="Total" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="spGetT2GulshanSLAStatus_Result">
+    <Property Type="String" Name="Status" Nullable="true" MaxLength="256" />
+    <Property Type="Int32" Name="Total" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="spGetT2NetworksAvgResolutionTime_Result">
+    <Property Type="String" Name="SupportGroup" Nullable="true" MaxLength="3072" />
+    <Property Type="Int32" Name="Total" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="spGetT2NetworksSLAStatus_Result">
+    <Property Type="String" Name="Status" Nullable="true" MaxLength="256" />
+    <Property Type="Int32" Name="Total" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="spGetT2OffPeakAvgResolutionTime_Result">
+    <Property Type="String" Name="SupportGroup" Nullable="true" MaxLength="3072" />
+    <Property Type="Int32" Name="Total" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="spGetT2OffPeakAvgResponseTime_Result">
+    <Property Type="String" Name="SupportGroup" Nullable="true" MaxLength="3072" />
+    <Property Type="Int32" Name="Total" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="spGetT2OffPeakResponseSLAStatus_Result">
+    <Property Type="String" Name="Status" Nullable="true" MaxLength="256" />
+    <Property Type="Int32" Name="Total" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="spGetT2OffPeakSLAStatus_Result">
+    <Property Type="String" Name="Status" Nullable="true" MaxLength="256" />
+    <Property Type="Int32" Name="Total" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="spGetT2OffSiteAvgResolutionTime_Result">
+    <Property Type="String" Name="SupportGroup" Nullable="true" MaxLength="3072" />
+    <Property Type="Int32" Name="Total" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="spGetT2OffSiteSLAStatus_Result">
+    <Property Type="String" Name="Status" Nullable="true" MaxLength="256" />
+    <Property Type="Int32" Name="Total" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="spGetT2OnSiteAvgResolutionTime_Result">
+    <Property Type="String" Name="SupportGroup" Nullable="true" MaxLength="3072" />
+    <Property Type="Int32" Name="Total" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="spGetT2OnSiteAvgResponseTime_Result">
+    <Property Type="String" Name="SupportGroup" Nullable="true" MaxLength="3072" />
+    <Property Type="Int32" Name="Total" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="spGetT2OnSiteResponseSLAStatus_Result">
+    <Property Type="String" Name="Status" Nullable="true" MaxLength="256" />
+    <Property Type="Int32" Name="Total" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="spGetT2OnSiteSLAStatus_Result">
+    <Property Type="String" Name="Status" Nullable="true" MaxLength="256" />
+    <Property Type="Int32" Name="Total" Nullable="true" />
+  </ComplexType>
+</Schema>

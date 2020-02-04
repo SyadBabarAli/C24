@@ -1,0 +1,180 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="MyJarvis.Main" %>
+<%@ Import Namespace="System.Web.Optimization" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Dashboard for AKU IT Service Desk">
+    <meta name="author" content="Naqqash Latif">
+
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <%--<title><%: Page.Title %></title>--%>
+    <title>Dashboard - AKU IT Service Desk</title>
+
+    <!-- Style Section -->
+    <%: Styles.Render("~/bundles/css")  %>
+    <asp:ContentPlaceHolder ID="StyleSection" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header>
+        <a id="side-nav-toggle" href="#0"><span class="hamburger-button"></span></a>
+        <div class="container">
+            <span id="brand" class="pull-left hidden-sm hidden-xs">
+                <img src="img/AKU_logo2.gif" /> AKU IT Service Desk
+            </span>
+            <div id="alerts" class="pull-right visible-lg">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-teal-400 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-youtube"></i> Demos <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li data-toggle="modal" data-target="#overviewModal"><a href="#">Overview</a></li>
+                        <li data-toggle="modal" data-target="#priorityModal"><a href="#">Priority</a></li>
+                        <li data-toggle="modal" data-target="#pendingModal"><a href="#">Pending</a></li>
+                    </ul>
+                </div>
+                <a href="PriorityTickets" class="btn btn-teal-400" role="button"><i class="fa fa-warning"></i> Priority <span class="badge"><asp:Label ID="PriorityTickets" runat="server" Text="0"></asp:Label></span></a>
+                <a href="PendingTickets" class="btn btn-teal-400" role="button"><i class="fa fa-hourglass-half"></i> Pending <span class="badge"><asp:Label ID="PendingTickets" runat="server" Text="0"></asp:Label></span></a>
+            </div>
+        </div>
+    </header>
+    <div id="side-nav">
+        <div>
+            <span id="title">Dashboard</span>
+            <nav>
+                <ul>
+                    <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="PriorityTickets"><i class="fa fa-warning"></i> Priority Tickets</a></li>
+                    <li><a href="PendingTickets"><i class="fa fa-hourglass-half"></i> Pending Tickets</a></li>
+                </ul>
+            </nav>
+            <span id="legal">&copy; AKU IT Service Desk</span>
+        </div>
+    </div>
+
+    <!-- Content Section -->
+    <asp:ContentPlaceHolder ID="ContentSection" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <a id="back-to-top" href="#" class="btn btn-teal btn-lg back-to-top" role="button"><span class="glyphicon glyphicon-chevron-up"></span></a>
+
+    <div class="modal fade" id="overviewModal" tabindex="-1" role="dialog" aria-labelledby="overviewModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <%--<h4 class="modal-title" id="overviewModalLabel">Overview Demo</h4>--%>
+                </div>
+                <div class="modal-body text-center">
+                    <div id="carousel-video-main" class="carousel slide" data-ride="carousel" data-interval="false">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <iframe src="https://player.vimeo.com/video/206372497" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            </div>
+                            <div class="item">
+                                <iframe src="https://player.vimeo.com/video/206372108" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            </div>
+                            <div class="item">
+                                <iframe src="https://player.vimeo.com/video/206372876" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="left carousel-control" href="#carousel-video-main" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-video-main" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+                <%--<div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>--%>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="priorityModal" tabindex="-1" role="dialog" aria-labelledby="priorityModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <%--<h4 class="modal-title" id="priorityModalLabel">Priority Demo</h4>--%>
+                </div>
+                <div class="modal-body text-center">
+                    <div id="carousel-video-priority" class="carousel slide" data-ride="carousel" data-interval="false">
+                        <div class="carousel-inner">
+                            <div class="item">
+                                <iframe src="https://player.vimeo.com/video/206372497" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            </div>
+                            <div class="item active">
+                                <iframe src="https://player.vimeo.com/video/206372108" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            </div>
+                            <div class="item">
+                                <iframe src="https://player.vimeo.com/video/206372876" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="left carousel-control" href="#carousel-video-priority" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-video-priority" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+                <%--<div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>--%>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="pendingModal" tabindex="-1" role="dialog" aria-labelledby="pendingModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <%--<h4 class="modal-title" id="pendingModalLabel">Pending Page Demo</h4>--%>
+                </div>
+                <div class="modal-body text-center">
+                    <div id="carousel-video-pending" class="carousel slide" data-ride="carousel" data-interval="false">
+                        <div class="carousel-inner">
+                            <div class="item">
+                                <iframe src="https://player.vimeo.com/video/206372497" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            </div>
+                            <div class="item">
+                                <iframe src="https://player.vimeo.com/video/206372108" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            </div>
+                            <div class="item active">
+                                <iframe src="https://player.vimeo.com/video/206372876" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="left carousel-control" href="#carousel-video-pending" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-video-pending" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+                <%--<div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>--%>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script Section -->
+    <%: Scripts.Render("~/bundles/js")  %>
+    <asp:ContentPlaceHolder ID="ScriptSection" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+</html>

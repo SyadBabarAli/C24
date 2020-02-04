@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DWDataMartModelStoreContainer" CdmEntityContainer="DWDataMartEntities">
+    <FunctionImportMapping FunctionImportName="spGetPendingTicketsAvgTime" FunctionName="DWDataMartModel.Store.spGetPendingTicketsAvgTime">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DWDataMartModel.spGetPendingTicketsAvgTime_Result">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spGetPendingTicketsAvgTimeD" FunctionName="DWDataMartModel.Store.spGetPendingTicketsAvgTimeD">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DWDataMartModel.spGetPendingTicketsAvgTimeD_Result">
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spGetPendingTicketsStatus" FunctionName="DWDataMartModel.Store.spGetPendingTicketsStatus">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DWDataMartModel.spGetPendingTicketsStatus_Result">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spGetT2OffPeakResponseSLAPercentage" FunctionName="DWDataMartModel.Store.spGetT2OffPeakResponseSLAPercentage">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DWDataMartModel.spGetT2OffPeakResponseSLAPercentage_Result">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spGetT2CentralAvgResolutionTime" FunctionName="DWDataMartModel.Store.spGetT2CentralAvgResolutionTime">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DWDataMartModel.spGetT2CentralAvgResolutionTime_Result">
+          <ScalarProperty Name="SupportGroup" ColumnName="SupportGroup" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spGetT2CentralSLAStatus" FunctionName="DWDataMartModel.Store.spGetT2CentralSLAStatus">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DWDataMartModel.spGetT2CentralSLAStatus_Result">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spGetT2CommunicationsAvgResolutionTime" FunctionName="DWDataMartModel.Store.spGetT2CommunicationsAvgResolutionTime">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DWDataMartModel.spGetT2CommunicationsAvgResolutionTime_Result">
+          <ScalarProperty Name="SupportGroup" ColumnName="SupportGroup" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spGetT2CommunicationsSLAStatus" FunctionName="DWDataMartModel.Store.spGetT2CommunicationsSLAStatus">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DWDataMartModel.spGetT2CommunicationsSLAStatus_Result">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spGetT2GulshanAvgResolutionTime" FunctionName="DWDataMartModel.Store.spGetT2GulshanAvgResolutionTime">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DWDataMartModel.spGetT2GulshanAvgResolutionTime_Result">
+          <ScalarProperty Name="SupportGroup" ColumnName="SupportGroup" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spGetT2GulshanSLAStatus" FunctionName="DWDataMartModel.Store.spGetT2GulshanSLAStatus">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DWDataMartModel.spGetT2GulshanSLAStatus_Result">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spGetT2NetworksAvgResolutionTime" FunctionName="DWDataMartModel.Store.spGetT2NetworksAvgResolutionTime">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DWDataMartModel.spGetT2NetworksAvgResolutionTime_Result">
+          <ScalarProperty Name="SupportGroup" ColumnName="SupportGroup" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spGetT2NetworksSLAStatus" FunctionName="DWDataMartModel.Store.spGetT2NetworksSLAStatus">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DWDataMartModel.spGetT2NetworksSLAStatus_Result">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spGetT2OffPeakAvgResolutionTime" FunctionName="DWDataMartModel.Store.spGetT2OffPeakAvgResolutionTime">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DWDataMartModel.spGetT2OffPeakAvgResolutionTime_Result">
+          <ScalarProperty Name="SupportGroup" ColumnName="SupportGroup" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spGetT2OffPeakAvgResponseTime" FunctionName="DWDataMartModel.Store.spGetT2OffPeakAvgResponseTime">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DWDataMartModel.spGetT2OffPeakAvgResponseTime_Result">
+          <ScalarProperty Name="SupportGroup" ColumnName="SupportGroup" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spGetT2OffPeakResponseSLAStatus" FunctionName="DWDataMartModel.Store.spGetT2OffPeakResponseSLAStatus">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DWDataMartModel.spGetT2OffPeakResponseSLAStatus_Result">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spGetT2OffPeakSLAStatus" FunctionName="DWDataMartModel.Store.spGetT2OffPeakSLAStatus">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DWDataMartModel.spGetT2OffPeakSLAStatus_Result">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spGetT2OffSiteAvgResolutionTime" FunctionName="DWDataMartModel.Store.spGetT2OffSiteAvgResolutionTime">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DWDataMartModel.spGetT2OffSiteAvgResolutionTime_Result">
+          <ScalarProperty Name="SupportGroup" ColumnName="SupportGroup" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spGetT2OffSiteSLAStatus" FunctionName="DWDataMartModel.Store.spGetT2OffSiteSLAStatus">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DWDataMartModel.spGetT2OffSiteSLAStatus_Result">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spGetT2OnSiteAvgResolutionTime" FunctionName="DWDataMartModel.Store.spGetT2OnSiteAvgResolutionTime">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DWDataMartModel.spGetT2OnSiteAvgResolutionTime_Result">
+          <ScalarProperty Name="SupportGroup" ColumnName="SupportGroup" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spGetT2OnSiteAvgResponseTime" FunctionName="DWDataMartModel.Store.spGetT2OnSiteAvgResponseTime">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DWDataMartModel.spGetT2OnSiteAvgResponseTime_Result">
+          <ScalarProperty Name="SupportGroup" ColumnName="SupportGroup" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spGetT2OnSiteResponseSLAStatus" FunctionName="DWDataMartModel.Store.spGetT2OnSiteResponseSLAStatus">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DWDataMartModel.spGetT2OnSiteResponseSLAStatus_Result">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spGetT2OnSiteSLAStatus" FunctionName="DWDataMartModel.Store.spGetT2OnSiteSLAStatus">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DWDataMartModel.spGetT2OnSiteSLAStatus_Result">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

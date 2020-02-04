@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\syedbabar.ali\Desktop\Projects\Publish\24h</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>02/22/2013 08:43:40</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>09/11/2013 09:10:04</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>09/11/2013 09:10:04</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.FriendlyUrls.dll">
+      <publishTime>07/30/2013 16:57:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 11:48:56</publishTime>
+    </File>
+    <File Include="bin/MyJarvis.dll">
+      <publishTime>05/10/2018 10:22:36</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>01/11/2015 19:54:54</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>01/28/2015 04:02:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.Cors.dll">
+      <publishTime>01/28/2015 04:01:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.Cors.dll">
+      <publishTime>01/28/2015 04:03:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>01/28/2015 04:02:54</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>01/28/2015 04:03:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>02/11/2014 15:26:04</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>07/17/2013 17:03:52</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>01/01/2017 22:38:00</publishTime>
+    </File>
+    <File Include="Content/dataTables.bootstrap.min.css">
+      <publishTime>02/22/2017 12:29:17</publishTime>
+    </File>
+    <File Include="Content/font-awesome.css">
+      <publishTime>01/02/2017 00:52:35</publishTime>
+    </File>
+    <File Include="Content/main.css">
+      <publishTime>04/11/2017 12:17:27</publishTime>
+    </File>
+    <File Include="Content/reset.css">
+      <publishTime>01/02/2017 12:42:20</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>09/14/2017 09:33:45</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>01/02/2017 11:40:09</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.eot">
+      <publishTime>01/02/2017 00:52:35</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.svg">
+      <publishTime>01/02/2017 00:52:35</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.ttf">
+      <publishTime>01/02/2017 00:52:35</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.woff">
+      <publishTime>01/02/2017 00:52:35</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.woff2">
+      <publishTime>01/02/2017 00:52:35</publishTime>
+    </File>
+    <File Include="fonts/FontAwesome.otf">
+      <publishTime>01/02/2017 00:52:35</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>01/01/2017 22:38:00</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>01/01/2017 22:38:00</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>01/01/2017 22:38:00</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>01/01/2017 22:38:00</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>01/01/2017 22:38:00</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>01/01/2017 22:36:17</publishTime>
+    </File>
+    <File Include="img/AKU_logo1.gif">
+      <publishTime>01/01/2017 23:28:03</publishTime>
+    </File>
+    <File Include="img/AKU_logo2.gif">
+      <publishTime>01/01/2017 23:28:03</publishTime>
+    </File>
+    <File Include="Main.Master">
+      <publishTime>03/02/2017 14:23:15</publishTime>
+    </File>
+    <File Include="Model.edmx.diagram">
+      <publishTime>01/02/2017 11:12:18</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>01/02/2017 11:11:11</publishTime>
+    </File>
+    <File Include="PendingTickets.aspx">
+      <publishTime>07/07/2017 10:11:41</publishTime>
+    </File>
+    <File Include="PriorityTickets.aspx">
+      <publishTime>09/18/2017 13:40:30</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>01/01/2017 22:38:00</publishTime>
+    </File>
+    <File Include="Scripts/data.js">
+      <publishTime>01/02/2017 11:53:56</publishTime>
+    </File>
+    <File Include="Scripts/dataTables.bootstrap.min.js">
+      <publishTime>02/22/2017 12:26:32</publishTime>
+    </File>
+    <File Include="Scripts/drilldown.js">
+      <publishTime>01/02/2017 11:53:56</publishTime>
+    </File>
+    <File Include="Scripts/exporting.js">
+      <publishTime>01/02/2017 11:53:56</publishTime>
+    </File>
+    <File Include="Scripts/frontpage.js">
+      <publishTime>04/10/2017 16:56:02</publishTime>
+    </File>
+    <File Include="Scripts/highcharts-more.js">
+      <publishTime>01/02/2017 16:55:54</publishTime>
+    </File>
+    <File Include="Scripts/highcharts.js">
+      <publishTime>01/02/2017 16:55:54</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.js">
+      <publishTime>01/01/2017 22:37:30</publishTime>
+    </File>
+    <File Include="Scripts/jquery.dataTables.min.js">
+      <publishTime>02/22/2017 12:26:32</publishTime>
+    </File>
+    <File Include="Scripts/main.js">
+      <publishTime>04/05/2017 15:21:50</publishTime>
+    </File>
+    <File Include="Scripts/no-data-to-display.js">
+      <publishTime>01/02/2017 13:26:04</publishTime>
+    </File>
+    <File Include="Scripts/pendingpage.js">
+      <publishTime>02/22/2017 15:44:53</publishTime>
+    </File>
+    <File Include="Scripts/prioritypage.js">
+      <publishTime>10/12/2017 12:35:14</publishTime>
+    </File>
+    <File Include="Scripts/solid-gauge.js">
+      <publishTime>01/02/2017 16:55:50</publishTime>
+    </File>
+    <File Include="Site.Mobile.Master">
+      <publishTime>01/01/2017 23:43:10</publishTime>
+    </File>
+    <File Include="ViewSwitcher.ascx">
+      <publishTime>01/01/2017 23:43:10</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/10/2018 12:20:28</publishTime>
+    </File>
+    <File Include="WebService.asmx">
+      <publishTime>01/02/2017 12:02:15</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

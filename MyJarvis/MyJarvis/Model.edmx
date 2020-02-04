@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="DWDataMartModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <Function Name="spGetPendingTicketsAvgTime" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="spGetPendingTicketsAvgTimeD" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="spGetPendingTicketsStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="spGetT2CentralAvgResolutionTime" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="spGetT2CentralSLAStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="spGetT2CommunicationsAvgResolutionTime" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="spGetT2CommunicationsSLAStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="spGetT2GulshanAvgResolutionTime" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="spGetT2GulshanSLAStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="spGetT2NetworksAvgResolutionTime" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="spGetT2NetworksSLAStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="spGetT2OffPeakAvgResolutionTime" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="spGetT2OffPeakAvgResponseTime" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="spGetT2OffPeakResponseSLAPercentage" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="spGetT2OffPeakResponseSLAStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="spGetT2OffPeakSLAStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="spGetT2OffSiteAvgResolutionTime" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="spGetT2OffSiteSLAStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="spGetT2OnSiteAvgResolutionTime" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="spGetT2OnSiteAvgResponseTime" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="spGetT2OnSiteResponseSLAStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="spGetT2OnSiteSLAStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <EntityContainer Name="DWDataMartModelStoreContainer" />
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DWDataMartModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="DWDataMartEntities" annotation:LazyLoadingEnabled="true" >
+          <FunctionImport Name="spGetPendingTicketsAvgTime" ReturnType="Collection(DWDataMartModel.spGetPendingTicketsAvgTime_Result)" />
+          <FunctionImport Name="spGetPendingTicketsAvgTimeD" ReturnType="Collection(DWDataMartModel.spGetPendingTicketsAvgTimeD_Result)" />
+          <FunctionImport Name="spGetPendingTicketsStatus" ReturnType="Collection(DWDataMartModel.spGetPendingTicketsStatus_Result)" />
+          <FunctionImport Name="spGetT2OffPeakResponseSLAPercentage" ReturnType="Collection(DWDataMartModel.spGetT2OffPeakResponseSLAPercentage_Result)" />
+          <FunctionImport Name="spGetT2CentralAvgResolutionTime" ReturnType="Collection(DWDataMartModel.spGetT2CentralAvgResolutionTime_Result)" />
+          <FunctionImport Name="spGetT2CentralSLAStatus" ReturnType="Collection(DWDataMartModel.spGetT2CentralSLAStatus_Result)" />
+          <FunctionImport Name="spGetT2CommunicationsAvgResolutionTime" ReturnType="Collection(DWDataMartModel.spGetT2CommunicationsAvgResolutionTime_Result)" />
+          <FunctionImport Name="spGetT2CommunicationsSLAStatus" ReturnType="Collection(DWDataMartModel.spGetT2CommunicationsSLAStatus_Result)" />
+          <FunctionImport Name="spGetT2GulshanAvgResolutionTime" ReturnType="Collection(DWDataMartModel.spGetT2GulshanAvgResolutionTime_Result)" />
+          <FunctionImport Name="spGetT2GulshanSLAStatus" ReturnType="Collection(DWDataMartModel.spGetT2GulshanSLAStatus_Result)" />
+          <FunctionImport Name="spGetT2NetworksAvgResolutionTime" ReturnType="Collection(DWDataMartModel.spGetT2NetworksAvgResolutionTime_Result)" />
+          <FunctionImport Name="spGetT2NetworksSLAStatus" ReturnType="Collection(DWDataMartModel.spGetT2NetworksSLAStatus_Result)" />
+          <FunctionImport Name="spGetT2OffPeakAvgResolutionTime" ReturnType="Collection(DWDataMartModel.spGetT2OffPeakAvgResolutionTime_Result)" />
+          <FunctionImport Name="spGetT2OffPeakAvgResponseTime" ReturnType="Collection(DWDataMartModel.spGetT2OffPeakAvgResponseTime_Result)" />
+          <FunctionImport Name="spGetT2OffPeakResponseSLAStatus" ReturnType="Collection(DWDataMartModel.spGetT2OffPeakResponseSLAStatus_Result)" />
+          <FunctionImport Name="spGetT2OffPeakSLAStatus" ReturnType="Collection(DWDataMartModel.spGetT2OffPeakSLAStatus_Result)" />
+          <FunctionImport Name="spGetT2OffSiteAvgResolutionTime" ReturnType="Collection(DWDataMartModel.spGetT2OffSiteAvgResolutionTime_Result)" />
+          <FunctionImport Name="spGetT2OffSiteSLAStatus" ReturnType="Collection(DWDataMartModel.spGetT2OffSiteSLAStatus_Result)" />
+          <FunctionImport Name="spGetT2OnSiteAvgResolutionTime" ReturnType="Collection(DWDataMartModel.spGetT2OnSiteAvgResolutionTime_Result)" />
+          <FunctionImport Name="spGetT2OnSiteAvgResponseTime" ReturnType="Collection(DWDataMartModel.spGetT2OnSiteAvgResponseTime_Result)" />
+          <FunctionImport Name="spGetT2OnSiteResponseSLAStatus" ReturnType="Collection(DWDataMartModel.spGetT2OnSiteResponseSLAStatus_Result)" />
+          <FunctionImport Name="spGetT2OnSiteSLAStatus" ReturnType="Collection(DWDataMartModel.spGetT2OnSiteSLAStatus_Result)" />
+        </EntityContainer>
+        <ComplexType Name="spGetPendingTicketsAvgTime_Result">
+          <Property Type="String" Name="Status" Nullable="true" MaxLength="3072" />
+          <Property Type="Int32" Name="Total" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="spGetPendingTicketsStatus_Result">
+          <Property Type="String" Name="Status" Nullable="true" MaxLength="3072" />
+          <Property Type="Int32" Name="Total" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="spGetPendingTicketsAvgTimeD_Result">
+          <Property Type="Int32" Name="Total" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="spGetT2OffPeakResponseSLAPercentage_Result">
+          <Property Type="String" Name="Status" Nullable="true" MaxLength="256" />
+          <Property Type="Decimal" Name="Total" Nullable="true" Precision="26" Scale="12" />
+        </ComplexType>
+        <ComplexType Name="spGetT2CentralAvgResolutionTime_Result">
+          <Property Type="String" Name="SupportGroup" Nullable="true" MaxLength="3072" />
+          <Property Type="Int32" Name="Total" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="spGetT2CentralSLAStatus_Result">
+          <Property Type="String" Name="Status" Nullable="true" MaxLength="256" />
+          <Property Type="Int32" Name="Total" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="spGetT2CommunicationsAvgResolutionTime_Result">
+          <Property Type="String" Name="SupportGroup" Nullable="true" MaxLength="3072" />
+          <Property Type="Int32" Name="Total" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="spGetT2CommunicationsSLAStatus_Result">
+          <Property Type="String" Name="Status" Nullable="true" MaxLength="256" />
+          <Property Type="Int32" Name="Total" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="spGetT2GulshanAvgResolutionTime_Result">
+          <Property Type="String" Name="SupportGroup" Nullable="true" MaxLength="3072" />
+          <Property Type="Int32" Name="Total" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="spGetT2GulshanSLAStatus_Result">
+          <Property Type="String" Name="Status" Nullable="true" MaxLength="256" />
+          <Property Type="Int32" Name="Total" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="spGetT2NetworksAvgResolutionTime_Result">
+          <Property Type="String" Name="SupportGroup" Nullable="true" MaxLength="3072" />
+          <Property Type="Int32" Name="Total" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="spGetT2NetworksSLAStatus_Result">
+          <Property Type="String" Name="Status" Nullable="true" MaxLength="256" />
+          <Property Type="Int32" Name="Total" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="spGetT2OffPeakAvgResolutionTime_Result">
+          <Property Type="String" Name="SupportGroup" Nullable="true" MaxLength="3072" />
+          <Property Type="Int32" Name="Total" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="spGetT2OffPeakAvgResponseTime_Result">
+          <Property Type="String" Name="SupportGroup" Nullable="true" MaxLength="3072" />
+          <Property Type="Int32" Name="Total" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="spGetT2OffPeakResponseSLAStatus_Result">
+          <Property Type="String" Name="Status" Nullable="true" MaxLength="256" />
+          <Property Type="Int32" Name="Total" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="spGetT2OffPeakSLAStatus_Result">
+          <Property Type="String" Name="Status" Nullable="true" MaxLength="256" />
+          <Property Type="Int32" Name="Total" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="spGetT2OffSiteAvgResolutionTime_Result">
+          <Property Type="String" Name="SupportGroup" Nullable="true" MaxLength="3072" />
+          <Property Type="Int32" Name="Total" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="spGetT2OffSiteSLAStatus_Result">
+          <Property Type="String" Name="Status" Nullable="true" MaxLength="256" />
+          <Property Type="Int32" Name="Total" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="spGetT2OnSiteAvgResolutionTime_Result">
+          <Property Type="String" Name="SupportGroup" Nullable="true" MaxLength="3072" />
+          <Property Type="Int32" Name="Total" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="spGetT2OnSiteAvgResponseTime_Result">
+          <Property Type="String" Name="SupportGroup" Nullable="true" MaxLength="3072" />
+          <Property Type="Int32" Name="Total" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="spGetT2OnSiteResponseSLAStatus_Result">
+          <Property Type="String" Name="Status" Nullable="true" MaxLength="256" />
+          <Property Type="Int32" Name="Total" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="spGetT2OnSiteSLAStatus_Result">
+          <Property Type="String" Name="Status" Nullable="true" MaxLength="256" />
+          <Property Type="Int32" Name="Total" Nullable="true" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DWDataMartModelStoreContainer" CdmEntityContainer="DWDataMartEntities" >
+          <FunctionImportMapping FunctionImportName="spGetPendingTicketsAvgTime" FunctionName="DWDataMartModel.Store.spGetPendingTicketsAvgTime">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DWDataMartModel.spGetPendingTicketsAvgTime_Result">
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spGetPendingTicketsAvgTimeD" FunctionName="DWDataMartModel.Store.spGetPendingTicketsAvgTimeD" >
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DWDataMartModel.spGetPendingTicketsAvgTimeD_Result">
+                <ScalarProperty Name="Total" ColumnName="Total" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spGetPendingTicketsStatus" FunctionName="DWDataMartModel.Store.spGetPendingTicketsStatus">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DWDataMartModel.spGetPendingTicketsStatus_Result">
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spGetT2OffPeakResponseSLAPercentage" FunctionName="DWDataMartModel.Store.spGetT2OffPeakResponseSLAPercentage">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DWDataMartModel.spGetT2OffPeakResponseSLAPercentage_Result">
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spGetT2CentralAvgResolutionTime" FunctionName="DWDataMartModel.Store.spGetT2CentralAvgResolutionTime">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DWDataMartModel.spGetT2CentralAvgResolutionTime_Result">
+                <ScalarProperty Name="SupportGroup" ColumnName="SupportGroup" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spGetT2CentralSLAStatus" FunctionName="DWDataMartModel.Store.spGetT2CentralSLAStatus">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DWDataMartModel.spGetT2CentralSLAStatus_Result">
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spGetT2CommunicationsAvgResolutionTime" FunctionName="DWDataMartModel.Store.spGetT2CommunicationsAvgResolutionTime">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DWDataMartModel.spGetT2CommunicationsAvgResolutionTime_Result">
+                <ScalarProperty Name="SupportGroup" ColumnName="SupportGroup" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spGetT2CommunicationsSLAStatus" FunctionName="DWDataMartModel.Store.spGetT2CommunicationsSLAStatus">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DWDataMartModel.spGetT2CommunicationsSLAStatus_Result">
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spGetT2GulshanAvgResolutionTime" FunctionName="DWDataMartModel.Store.spGetT2GulshanAvgResolutionTime">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DWDataMartModel.spGetT2GulshanAvgResolutionTime_Result">
+                <ScalarProperty Name="SupportGroup" ColumnName="SupportGroup" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spGetT2GulshanSLAStatus" FunctionName="DWDataMartModel.Store.spGetT2GulshanSLAStatus">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DWDataMartModel.spGetT2GulshanSLAStatus_Result">
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spGetT2NetworksAvgResolutionTime" FunctionName="DWDataMartModel.Store.spGetT2NetworksAvgResolutionTime">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DWDataMartModel.spGetT2NetworksAvgResolutionTime_Result">
+                <ScalarProperty Name="SupportGroup" ColumnName="SupportGroup" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spGetT2NetworksSLAStatus" FunctionName="DWDataMartModel.Store.spGetT2NetworksSLAStatus">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DWDataMartModel.spGetT2NetworksSLAStatus_Result">
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spGetT2OffPeakAvgResolutionTime" FunctionName="DWDataMartModel.Store.spGetT2OffPeakAvgResolutionTime">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DWDataMartModel.spGetT2OffPeakAvgResolutionTime_Result">
+                <ScalarProperty Name="SupportGroup" ColumnName="SupportGroup" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spGetT2OffPeakAvgResponseTime" FunctionName="DWDataMartModel.Store.spGetT2OffPeakAvgResponseTime">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DWDataMartModel.spGetT2OffPeakAvgResponseTime_Result">
+                <ScalarProperty Name="SupportGroup" ColumnName="SupportGroup" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spGetT2OffPeakResponseSLAStatus" FunctionName="DWDataMartModel.Store.spGetT2OffPeakResponseSLAStatus">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DWDataMartModel.spGetT2OffPeakResponseSLAStatus_Result">
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spGetT2OffPeakSLAStatus" FunctionName="DWDataMartModel.Store.spGetT2OffPeakSLAStatus">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DWDataMartModel.spGetT2OffPeakSLAStatus_Result">
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spGetT2OffSiteAvgResolutionTime" FunctionName="DWDataMartModel.Store.spGetT2OffSiteAvgResolutionTime">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DWDataMartModel.spGetT2OffSiteAvgResolutionTime_Result">
+                <ScalarProperty Name="SupportGroup" ColumnName="SupportGroup" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spGetT2OffSiteSLAStatus" FunctionName="DWDataMartModel.Store.spGetT2OffSiteSLAStatus">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DWDataMartModel.spGetT2OffSiteSLAStatus_Result">
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spGetT2OnSiteAvgResolutionTime" FunctionName="DWDataMartModel.Store.spGetT2OnSiteAvgResolutionTime">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DWDataMartModel.spGetT2OnSiteAvgResolutionTime_Result">
+                <ScalarProperty Name="SupportGroup" ColumnName="SupportGroup" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spGetT2OnSiteAvgResponseTime" FunctionName="DWDataMartModel.Store.spGetT2OnSiteAvgResponseTime">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DWDataMartModel.spGetT2OnSiteAvgResponseTime_Result">
+                <ScalarProperty Name="SupportGroup" ColumnName="SupportGroup" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spGetT2OnSiteResponseSLAStatus" FunctionName="DWDataMartModel.Store.spGetT2OnSiteResponseSLAStatus">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DWDataMartModel.spGetT2OnSiteResponseSLAStatus_Result">
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spGetT2OnSiteSLAStatus" FunctionName="DWDataMartModel.Store.spGetT2OnSiteSLAStatus">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DWDataMartModel.spGetT2OnSiteSLAStatus_Result">
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
